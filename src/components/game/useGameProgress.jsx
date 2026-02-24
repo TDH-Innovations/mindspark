@@ -1,5 +1,6 @@
 import { useLocalStorage } from './useLocalStorage';
 import { getTodayDate } from './gameGenerator';
+// Note: useEffect removed as it's not needed here
 
 const initialAchievements = [
   { id: 'first-game', title: 'First Steps', description: 'Complete your first game', icon: '🎯', unlocked: false, requirement: 1, progress: 0 },
