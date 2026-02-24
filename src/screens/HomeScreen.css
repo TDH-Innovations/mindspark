@@ -1,0 +1,204 @@
+/* HomeScreen.css */
+
+.home-screen {
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 20px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #e2e8f0;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0 0 24px 0;
+}
+
+.streak-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.streak-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.streak-icon {
+  font-size: 32px;
+}
+
+.streak-info {
+  flex: 1;
+  text-align: left;
+}
+
+.streak-number {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1;
+}
+
+.streak-label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.completion-banner {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  margin: 24px 0;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confetti {
+  font-size: 48px;
+  margin-bottom: 16px;
+  animation: spin 2s linear infinite;
+}
+
+.completion-banner h2 {
+  font-size: 28px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.completion-banner p {
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  opacity: 0.9;
+}
+
+.score-badge {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.games-section {
+  margin: 32px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.quick-stats {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.stats-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+}
+
+.stats-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(102, 126, 234, 0.4);
+}
+
+.stats-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .app-title {
+    font-size: 28px;
+  }
+  
+  .streak-cards {
+    max-width: 100%;
+  }
+}
