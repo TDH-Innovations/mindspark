@@ -1,8 +1,10 @@
+import App from './src/App'
+
 export const pagesConfig = {
   Pages: {
     Home: {
       path: '/',
-      component: () => import('./src/App.tsx')
+      element: App
     }
   },
   mainPage: 'Home'
