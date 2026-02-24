@@ -1,11 +1,6 @@
 import { 
   DailyChallenge, 
-  GameUnion, 
-  QuickTapGame, 
-  WordChainGame, 
-  ColorMatchGame, 
-  NumberNinjasGame,
-  DailyGoalsGame 
+  GameUnion
 } from '../types/game.types';
 import { generateQuickTapGame } from '../data/quickTap';
 import { generateWordChainGame } from '../data/wordChain';
