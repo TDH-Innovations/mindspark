@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { DailyChallenge, GameUnion } from '../types/game.types';
 import { generateDailyGames, getTodayDate, calculateTotalScore } from '../utils/gameGenerator';
 import { useLocalStorage } from './useLocalStorage';
