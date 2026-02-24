@@ -65,8 +65,6 @@ const QuickTap: React.FC<QuickTapProps> = ({ game, onComplete, onBack }) => {
     if (!playerTurn || gameState.currentStep >= game.sequence.length) return;
 
     const rect = (event.target as HTMLElement).getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
 
     const correctPosition = game.sequence[gameState.currentStep];
 
