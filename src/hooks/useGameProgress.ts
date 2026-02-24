@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState } from 'react';
 import { UserStats, Achievement, GameType } from '../types/game.types';
 import { useLocalStorage } from './useLocalStorage';
 import { getTodayDate } from '../utils/gameGenerator';
