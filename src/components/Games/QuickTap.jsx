@@ -61,7 +61,7 @@ const QuickTap: React.FC<QuickTapProps> = ({ game, onComplete, onBack }) => {
     }
   }, [isPlaying, playerTurn]);
 
-  const handleButtonClick = (position: number, _event: React.MouseEvent) => {
+  const handleButtonClick = (position: number, event: React.MouseEvent) => {
     if (!playerTurn || gameState.currentStep >= game.sequence.length) return;
 
     const correctPosition = game.sequence[gameState.currentStep];
