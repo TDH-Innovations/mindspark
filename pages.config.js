@@ -1,10 +1,7 @@
-import App from './src/App'
-
 export const pagesConfig = {
   Pages: {
     Home: {
-      path: '/',
-      element: App
+      path: '/'
     }
   },
   mainPage: 'Home'
