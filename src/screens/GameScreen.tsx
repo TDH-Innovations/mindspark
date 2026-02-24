@@ -5,7 +5,6 @@ import WordChain from '../components/Games/WordChain';
 import ColorMatch from '../components/Games/ColorMatch';
 import NumberNinjas from '../components/Games/NumberNinjas';
 import DailyGoals from '../components/Games/DailyGoals';
-import { calculateGameScore } from '../utils/gameGenerator';
 import './GameScreen.css';
 
 interface GameScreenProps {
